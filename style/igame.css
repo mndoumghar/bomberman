@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    padding: 0;
+}
+
+#container {
+    background-color: rgb(33, 66, 15);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+
+.entity.built {
+    background-color: rgb(148, 110, 48);
+    width: 40px;
+    height: 40px;
+    position: absolute; 
+}
+
+.entity.player {
+position: absolute;
+width: 80px;
+height: 80px;
+}
