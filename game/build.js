@@ -1,13 +1,16 @@
 import Entity from "./ENTITY.js";
-
 export class Built {
     constructor() {
+        this.render()
+    }
+
+    render() {
         const TILE_SIZE = 80;
         let grid = [
-            [1, 1, 1, 1, 1, 1, 1,],
+            [1, 1, 1, 1, 1, 1, 1],
             [1, 0, 0, 0, 0, 0, 1],
-            [1, 0, 1, 0, 1, 0, 1,],
-            [1, 0, 1, , 1, 0, 1, 1],
+            [1, 0, 1, 0, 1, 0, 1],
+            [1, 0, 1, 0, 1, 0, 1],
             [1, 0, 1, 1, 1, 0, 1],
             [1, 0, 0, 0, 0, 0, 1],
             [1, 1, 1, 1, 1, 1, 1],
@@ -24,3 +27,4 @@ export class Built {
         }
     }
 }
+

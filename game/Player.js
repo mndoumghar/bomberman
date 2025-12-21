@@ -1,6 +1,6 @@
 import Entity from "./ENTITY.js";
 
-export default class Palyer extends Entity {
+export default class Player extends Entity {
     constructor() {
         super({ tag: "img", className: "player" });
         this.el.src = "game/bomberman.png";
@@ -11,8 +11,8 @@ export default class Palyer extends Entity {
 
     spawn() {
         const container = document.getElementById('container');
-        this.setX((container.clientWidth + 10) - 600);
-        this.setY((container.clientHeight - 90));
+        this.setX((container.clientWidth -60) - 600);
+        this.setY((container.clientHeight - 200));
     }
 
     moveRight() {
@@ -25,12 +25,11 @@ export default class Palyer extends Entity {
     }
 
     moveUp() {
-            this.setX();
+            this.setY(this.y - this.SPEED)
     }
 
-     moveDown() {
-            this.setX();
-
+    moveDown() {
+            this.setY(this.y + this.SPEED)
     }
-
+     
 } 

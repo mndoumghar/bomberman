@@ -1,13 +1,17 @@
 body {
     background-color: black;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 #container {
-    background-color: rgb(33, 66, 15);
+    background-color: rgb(15, 20, 12);
     position: relative;
     overflow: hidden;
     color: white;
+    
 }
 
 
@@ -22,4 +26,26 @@ body {
 position: absolute;
 width: 80px;
 height: 80px;
+}
+
+.entity.enemy {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+.meaun{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+}
+.entity.live {
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+}
+img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }

@@ -10,6 +10,7 @@ export default class Entity {
         this.x = 0;
         this.y = 0;
     }
+   
 
     setX(x) {
         this.x = x;
@@ -33,4 +34,9 @@ export default class Entity {
             this.el = null;
         }
     }
+
+
+
+
 }
+
